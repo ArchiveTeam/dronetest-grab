@@ -1,0 +1,16 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    registry: atdr.meo.ws
+    username:
+      from_secret: atdr_user
+    password:
+      from_secret: atdr_pass
+    repo: archiveteam/dronetest-grab
+    dockerfile: Dockerfile
+    purge: true
