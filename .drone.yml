@@ -11,6 +11,6 @@ steps:
       from_secret: atdr_user
     password:
       from_secret: atdr_pass
-    repo: atdr.meo.ws/archiveteam/dronetest-grab
+    repo: atdr-writer.meo.ws/archiveteam/dronetest-grab
     dockerfile: Dockerfile
     purge: true
