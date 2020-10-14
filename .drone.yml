@@ -6,7 +6,7 @@ steps:
 - name: docker
   image: plugins/docker
   settings:
-    registry: atdr.meo.ws
+    registry: atdr-writer.meo.ws
     username:
       from_secret: atdr_user
     password:
